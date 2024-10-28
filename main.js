@@ -4,7 +4,7 @@ const pin = process.env.API_KEY;
 
 console.log(pin);
 
-const user = process.argv.slice()
+const user = process.argv[2]
 console.log(process.argv);
 
 
@@ -15,9 +15,10 @@ console.log(process.argv);
     console.log('Welcome admin')
 } */
 
-if(pin === 1234 && user === 'admin'){
+if(pin === 1234 && user === "admin"){
     console.log('Welcome admin');
-} else{ 
+} 
+else{ 
     console.log('Access Restricted');
     process.exit(1)
 
