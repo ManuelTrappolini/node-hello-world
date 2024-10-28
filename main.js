@@ -15,7 +15,7 @@ console.log(process.argv);
     console.log('Welcome admin')
 } */
 
-if(pin === 1234 && user === "admin"){
+if(pin == 1234 && user == "admin"){
     console.log('Welcome admin');
 } 
 else{ 
